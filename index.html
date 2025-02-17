@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>QuickPick</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="navBar">
+      <button class="navBar-logo border" onclick="window.location.reload()"></button>
+      <div class="navBar-location">
+        <p>Categories</p>
+        <div class="select">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" />
+          </svg>
+          <select>
+            <option selected>Electronics</option>
+            <option>Fashion</option>
+            <option>Home & Kitchen</option>
+            <option>Beauty & Personal Care</option>
+            <option>Sports & Fitness</option>
+            <option>Books & Stationery</option>
+            <option>Automotive</option>
+            <option>Toys & Games</option>
+            <option>Health & Wellness</option>
+            <option>Groceries</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="navBar-search-box border2">
+        <div class="navBar-search-text">
+          <input type="text" placeholder="Search for items" />
+        </div>
+        <div class="navBar-search-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="navBar-location">
+        <p>Select Location</p>
+        <div class="select">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+          </svg>
+          <select>
+            <option selected>India</option>
+            <option>United States</option>
+            <option>United Kingdom</option>
+            <option>Canada</option>
+            <option>Australia</option>
+            <option>Germany</option>
+            <option>France</option>
+            <option>Japan</option>
+            <option>China</option>
+            <option>Brazil</option>
+            <option>South Africa</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="navBar-signIn">
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+        </svg>
+
+        <button>Log In</button>
+
+
+        <button>Sign Up</button>
+
+      </div>
+
+  </header>
+
+  <div class="hero-section">
+    <div class="hero-product">
+      <div class="scroll_content">
+        <img src="hero_product1.png">
+        <img src="hero_product2.webp">
+        <img src="hero_product3.webp">
+        <img src="hero_product4.webp">
+      </div>
+    </div>
+    <div>
+      <button>Buy Now!</button>
+    </div>
+
+
+
+  </div>
+  <div class="main">
+    <div class="products-grid">
+      <div class="product-container">
+        <div class="product-image-container">
+          <img class="product-image" src="images/products/athletic-cotton-socks-6-pairs.jpg">
+        </div>
+
+        <div class="product-name">
+          Black and Gray Athletic Cotton Socks - 6 Pairs
+        </div>
+
+        <div class="product-rating-container">
+          <img class="product-rating-stars" src="images/ratings/rating-45.png">
+          <div class="product-rating-count">
+            87 ratings
+          </div>
+        </div>
+
+        <div class="product-price">
+          $10.90
+        </div>
+
+
+
+
+
+
+        <button class="add-to-cart-button">
+          Add to Cart
+        </button> <select onchange="cart_count_display(0);" class="counter counter_1">
+          <option selected value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+
+      <div class="product-container">
+        <div class="product-image-container">
+          <img class="product-image" src="images/products/intermediate-composite-basketball.jpg">
+        </div>
+
+        <div class="product-name">
+          Intermediate Size Basketball
+        </div>
+
+        <div class="product-rating-container">
+          <img class="product-rating-stars" src="images/ratings/rating-40.png">
+          <div class="product-rating-count">
+            127 ratings
+          </div>
+        </div>
+
+        <div class="product-price">
+          $20.95
+        </div>
+
+
+
+
+
+
+        <button class="add-to-cart-button">
+          Add to Cart
+        </button> <select onchange="cart_count_display(1);" class="counter counter_2">
+          <option selected value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+
+      <div class="product-container">
+        <div class="product-image-container">
+          <img class="product-image" src="images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg">
+        </div>
+
+        <div class="product-name">
+          Adults Plain Cotton T-Shirt - 2 Pack
+        </div>
+
+        <div class="product-rating-container">
+          <img class="product-rating-stars" src="images/ratings/rating-45.png">
+          <div class="product-rating-count">
+            56 ratings
+          </div>
+        </div>
+
+        <div class="product-price">
+          $7.99
+        </div>
+
+
+
+
+
+        <button class="add-to-cart-button">
+          Add to Cart
+        </button> <select onchange="cart_count_display(2);" class="counter counter_3">
+          <option selected value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+
+
+      <div class="product-container">
+        <div class="product-image-container">
+          <img class="product-image" src="images/products/floral-mixing-bowl-set.jpg">
+        </div>
+
+        <div class="product-name">
+          Floral mixing bowl set
+        </div>
+
+        <div class="product-rating-container">
+          <img class="product-rating-stars" src="images/ratings/rating-45.png">
+          <div class="product-rating-count link-primary">
+            27 ratings
+          </div>
+        </div>
+
+        <div class="product-price">
+          $20.99
+        </div>
+
+
+
+        <button class="add-to-cart-button">
+          Add to Cart
+        </button> <select onchange="cart_count_display(3);" class="counter counter_4">
+          <option selected value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="cart">
+    <svg class="cart_icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+      stroke="currentColor" class="size-6">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+    </svg>
+    <div class="quantity-in-cart">
+      0
+    </div>
+
+  </div>
+  <button class="delete_cart">
+    <p> Delete Cart </p>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+      <path fill-rule="evenodd"
+        d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z"
+        clip-rule="evenodd" />
+    </svg>
+
+
+  </button>
+
+  <footer>
+    <button class="back-to-top">
+      <p>Back to Top</p>
+
+    </button>
+    <div class="footer-section">
+      <div class="about-section style">
+        <h3>Get to Know Us</h3>
+        <ul>
+          <li>Article 1</li>
+          <li>Article 2</li>
+          <li>Article 3</li>
+          <li>Article 4</li>
+          <li>Article 5</li>
+          <li>Article 6</li>
+        </ul>
+      </div>
+      <div class="make-money style">
+        <h3>Make Money with Us</h3>
+        <ul>
+          <li>Sell on QuickPick</li>
+          <li>Become an Affiliate</li>
+        </ul>
+
+      </div>
+      <div class="social-media style">
+        <h3>Connect with Us on</h2>
+          <ul>
+            <li>Instagram</li>
+            <li>Facebook</li>
+            <li>X</li>
+          </ul>
+
+      </div>
+      <div class="help-section style">
+        <h3>Let Us Help You</h3>
+        <ul>
+          <li>Customer Care Number</li>
+          <li>QuickPick ChatBot</li>
+          <li>Return Center</li>
+          <li>Exchange Center</li>
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
